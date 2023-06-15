@@ -1,0 +1,29 @@
+<div className="col-12 border rounded-1 text-center m-3">
+            <h5 className="display-5">{recipe.name}</h5>
+            <div className="row">
+              <div className="col-6">
+                <h6 className="display-6">Ingredients</h6>
+                {recipe.ingredients.map((ingredient, index) => (
+                  <ul>
+                    <p>
+                      {index + 1}
+                      {".  "}
+                      {ingredient}
+                    </p>
+                  </ul>
+                ))}
+              </div>
+              <div className="col-6">
+                <h6 className="display-6">Steps</h6>
+                {recipe.steps.map((step, index) => (
+                  <ul>
+                    <p>
+                      {index + 1}
+                      {".  "}
+                      {step}
+                    </p>
+                  </ul>
+                ))}
+              </div>
+            </div>
+          </div>
