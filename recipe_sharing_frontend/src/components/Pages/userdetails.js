@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import loginState from "./loginState";
-import getUser from "./getUser";
+import loginState from "../Custom Hooks/loginState";
+import getUser from "../Custom Hooks/getUser";
 import axios from "axios";
 import { Dialog } from "primereact/dialog";
 

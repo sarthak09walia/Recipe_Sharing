@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import loginState from "./loginState";
+import loginState from "../Custom Hooks/loginState";
 import Resizer from "react-image-file-resizer";
 import { Link, useParams } from "react-router-dom";
-import getUser from "./getUser";
+import getUser from "../Custom Hooks/getUser";
 
 const ReportForm = () => {
   // eslint-disable-next-line

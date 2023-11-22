@@ -1,4 +1,4 @@
-import userDetails from "./getUser";
+import userDetails from "../Custom Hooks/getUser";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./home.css";

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Outlet, Link, useNavigate } from "react-router-dom";
-import loginState from "./loginState";
+import loginState from "../Custom Hooks/loginState";
 import axios from "axios";
 
 const Layout = () => {
@@ -20,6 +20,7 @@ const Layout = () => {
   useEffect(() => {
     if (searched.length > 0) searchUser();
     else setSearchedResult([]); // Reset searchedResult to an empty array
+    // eslint-disable-next-line
   }, [searched]);
 
   const toggleNav = () => {
@@ -65,7 +66,7 @@ const Layout = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand display-1">
-            TasteBudsConnect
+            YumShare
           </Link>
           <button className="navbar-toggler" type="button" onClick={toggleNav}>
             <span className="navbar-toggler-icon"></span>
